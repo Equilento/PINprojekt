@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "My profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model WebApplication1.Data.Models.User
+
+<div class="container">
+    <div class="row">
+        <ul style="list-style-type:none;" class="centered">
+            <li style="margin: 50px 0;">IME: @Model.FirstName</li>
+            <li style="margin: 50px 0;">PREZIME: @Model.LastName</li>
+            <li style="margin: 50px 0;">EMAIL: @Model.Email</li>
+            <li style="margin: 50px 0;">ID: @Model.UserID</li>
+
+        </ul>
+    </div>
+</div>
+
